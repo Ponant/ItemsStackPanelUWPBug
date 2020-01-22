@@ -10,7 +10,7 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -18,14 +18,10 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.ColumnSpan="1" Orientation="Horizontal">
-            <AppBarButton Icon="Folder"
-                      LabelPosition="Collapsed"
-                      Click="FolderPickerButton_Click"/>
-        </StackPanel>
+       
         <Grid Grid.Row="1" Background="LightGreen">
             <ListView
-              ItemsSource="{x:Bind CollectionViewSource.View, Mode=OneWay}"
+              ItemsSource="{x:Bind Items, Mode=OneWay}"
               ScrollViewer.HorizontalScrollMode="Enabled"
               ScrollViewer.HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left">
                 <ListView.ItemsPanel>
@@ -35,24 +31,7 @@
                 </ListView.ItemsPanel>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="Not working" TextWrapping="WrapWholeWords"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Grid>
-        <Grid Grid.Row="2" Background="Yellow">
-            <ListView
-              ItemsSource="{x:Bind WorksCollectionViewSource.View, Mode=OneWay}"
-              ScrollViewer.HorizontalScrollMode="Enabled"
-              ScrollViewer.HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left">
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <ItemsStackPanel Orientation="Horizontal"/>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="Working" TextWrapping="WrapWholeWords"/>
+                        <TextBlock Text="Not working"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
