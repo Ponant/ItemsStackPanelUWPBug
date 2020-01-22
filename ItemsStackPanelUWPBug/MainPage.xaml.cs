@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.Threading.Tasks;
-using Windows.Storage;
-using Windows.Storage.BulkAccess;
-using Windows.Storage.FileProperties;
-using Windows.Storage.Pickers;
-using Windows.Storage.Search;
-using Windows.UI.Xaml;
+﻿using System.Collections.ObjectModel;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Data;
 
 namespace ItemsStackPanelUWPBug
 {
