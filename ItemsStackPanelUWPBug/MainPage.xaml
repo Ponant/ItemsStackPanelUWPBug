@@ -21,7 +21,7 @@
        
         <Grid Grid.Row="1" Background="LightGreen">
             <ListView
-              ItemsSource="{x:Bind Items, Mode=OneWay}"
+              ItemsSource="{x:Bind Items}"
               ScrollViewer.HorizontalScrollMode="Enabled"
               ScrollViewer.HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left">
                 <ListView.ItemsPanel>
