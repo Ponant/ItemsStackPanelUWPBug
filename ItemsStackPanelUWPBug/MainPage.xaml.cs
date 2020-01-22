@@ -25,6 +25,7 @@ namespace ItemsStackPanelUWPBug
         public MainPage()
         {
             this.InitializeComponent();
+            var u = 1;
         }
     }
 }
